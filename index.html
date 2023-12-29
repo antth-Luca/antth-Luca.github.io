@@ -42,6 +42,15 @@
             width: 32px;
         }
 
+        .instrucao {
+            position: absolute;
+            bottom: 13vh;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+
         .scroll-arrow {
             position: absolute;
             bottom: 10vh;
@@ -142,7 +151,8 @@
 <body>
     <header>
         <img id="LA" src="assets/LA-sigla.svg">
-        <img id="seta" class="scroll-arrow hidden" src="assets/seta.svg">
+        <span class="instrucao">Deslize!</span>
+        <img id="seta" class="scroll-arrow" src="assets/seta.svg">
     </header>
 
     <main>
@@ -157,7 +167,7 @@
                 <ul id="sem-espaco">
                     <li class="cont-p sem-mark">
                         <p>Tenho 18 anos e estou estudando arduamente para ser um desenvolvedor. Atualmente, estou no terceiro semestre do curso técnico de desenvolvimento de sistemas no IFPR - Campus Astoga e até o momento, estou gostando bastante de desenvolvimento para a WEB Full Stack. Assino todos os meus códigos como antthLuca!</p>
-                        <p>Minha experiência se resume aos meus estudos e aos projetos pessoais, principalmente um projeto WEB pessoal que venho trabalhando desde 19/08/2023, mas prefiro deixar este para ser apresentado quando estiver finalizado! Por enquanto, digo que estou usando o framework Django, banco de dados orientado a grafos Neo4j e superficialmente ferramentas, como Bootstrap, Crispy Forms, jQuery e htmx.</p>
+                        <p>Minha experiência se resume aos meus estudos e aos projetos pessoais, principalmente um projeto WEB que venho trabalhando desde 19/08/2023, mas prefiro deixar este para ser apresentado quando estiver finalizado! Por enquanto, digo que estou usando o framework Django, banco de dados orientado a grafos Neo4j e superficialmente ferramentas, como Bootstrap, Crispy Forms, jQuery e htmx.</p>
                     </li>
                 </ul>
             </li>
@@ -228,12 +238,15 @@
     <script>
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
+            const instruc = document.querySelector('.instrucao');
             const arrow = document.querySelector('.scroll-arrow');
             if (window.scrollY > 0) {
                 header.style.height = '64px';
+                instruc.classList.add('hidden');
                 arrow.classList.add('hidden');
             } else {
                 header.style.height = '100%';
+                instruc.classList.remove('hidden');
                 arrow.classList.remove('hidden');
             }
         });
