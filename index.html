@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,7 +67,7 @@
         /*Conteúdo*/
         main {
             margin-top: 280px;
-            width: 92.2vw;
+            padding-bottom: 52px;
         }
 
         #perfil {
@@ -76,15 +76,46 @@
             margin-right: 20px;
         }
 
-        #boas-vindas {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #boas-vindas h2 {
+        .text-efect {
+            height: 52px;
+            display: grid;
+            place-items: center;
             font-weight: 500;
             font-size: 36px;
+        }
+
+        @media (max-width: 450px) {
+            .text-efect {
+                height: 42px;
+                font-size: 28px;
+            }
+        }
+
+        .text {
+            width: 100%;
+            animation: typing 3s steps(25), blink .5;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: #151111;
+            }
+        }
+
+        #boas-vindas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .topico {
@@ -106,6 +137,10 @@
 
         .h-cont {
             font-weight: 300;
+        }
+
+        .lista-mae {
+            padding: 0 1vw;
         }
 
         .lista-mae li {
@@ -157,8 +192,10 @@
 
     <main>
         <section id="boas-vindas">
-            <img id="perfil" src="assets/perfil.jpg">
-            <h2>Olá, eu sou Luca Anthony!</h2>
+            <img id="perfil" src="assets/perfil.png">
+            <div class="text-efect">
+                <div class="name">Olá, eu sou Luca Anthony!</div>
+            </div>
         </section>
 
         <ul class="lista-mae">
@@ -176,7 +213,7 @@
                 <h3 class="topico">Formação acadêmica:</h3>
                 <ul>
                     <li>
-                        <p class="h-cont">Instituto Federal do Paraná, Campus de Astorga - Técnico Subsequente Desenvolv. de Sist.</p>
+                        <p class="h-cont">Instituto Federal do Paraná, Campus de Astorga - Técnico Subsequente Desenvolv. de Sistemas</p>
                         <small>FEVEREIRO DE 2023 - DEZEMBRO DE 2024</small>
                     </li>
 
@@ -220,15 +257,34 @@
                 <h3>Total: 506 horas</h3>
             </li>
 
+            <script src="https://kit.fontawesome.com/121ad6fd97.js" crossorigin="anonymous"></script>
             <li id="contato">
                 <h3 class="topico">Me encontre:</h3>
                 <div id="cont-links">
-                    <a id="email" href="mailto:lucamafort05@gmail.com?subject=&body=" target="_blank">Email</a>
-                    <a id="tele" href="https://t.me/antthLuca" target="_blank">Telegram</a>
-                    <a id="linkedin" href="http://www.linkedin.com/in/antth-Luca" target="_blank">LinkedIn</a>
-                    <a id="git" href="https://github.com/antth-Luca" target="_blank">GitHub</a>
-                    <a id="trail" href="https://trailblazer.me/id/antth-Luca" target="_blank">I’m trailblazer</a>
-                    <a id="insta" href="https://instagram.com/antth.luca?igshid=ZDdkNTZiNTM=" target="_blank">Instagram</a>
+                    <a id="email" href="mailto:lucamafort05@gmail.com?subject=&body=" target="_blank">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span>Email</span>
+                    </a>
+                    <a id="tele" href="https://t.me/antthLuca" target="_blank">
+                        <span><i class="fa-brands fa-telegram"></i></span>
+                        <span>Telegram</span>
+                    </a>
+                    <a id="linkedin" href="http://www.linkedin.com/in/antth-Luca" target="_blank">
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a id="git" href="https://github.com/antth-Luca" target="_blank">
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span>GitHub</span>
+                    </a>
+                    <a id="trail" href="https://trailblazer.me/id/antth-Luca" target="_blank">
+                        <span><i class="fa-brands fa-salesforce"></i></span>
+                        <span>I’m trailblazer</span>
+                    </a>
+                    <a id="insta" href="https://instagram.com/antth.luca?igshid=ZDdkNTZiNTM=" target="_blank">
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span>Instagram</span>
+                    </a>
                 </div>
             </li>
         </ul>
@@ -240,14 +296,19 @@
             const header = document.querySelector('header');
             const instruc = document.querySelector('.instrucao');
             const arrow = document.querySelector('.scroll-arrow');
+            const name = document.querySelector('.name');
             if (window.scrollY > 0) {
                 header.style.height = '64px';
                 instruc.classList.add('hidden');
                 arrow.classList.add('hidden');
+                name.classList.remove('hidden');
+                name.classList.add('text');
             } else {
                 header.style.height = '100%';
                 instruc.classList.remove('hidden');
                 arrow.classList.remove('hidden');
+                name.classList.add('hidden');
+                name.classList.remove('text');
             }
         });
     </script>
