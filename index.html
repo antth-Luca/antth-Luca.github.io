@@ -47,15 +47,6 @@
             transition: opacity 0.5s;
         }
 
-        .scroll-arrow {
-            position: absolute;
-            bottom: 10vh;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-            transition: opacity 0.5s;
-        }
-
         /* Elemento de UIverse. SCROLL animado. Créditos à @mrhyddenn */
         .scrolldown {
           --color: white;
@@ -276,13 +267,15 @@
 <body>
     <header>
         <img id="LA" src="assets/LA-sigla.svg">
-        <span class="instrucao">Deslize!</span>
-        <div class="scrolldown" style="--color: white">
-            <div class="chevrons">
-                <div class="chevrondown"></div>
-                <div class="chevrondown"></div>
+        <span class="instrucao">
+            Deslize!
+            <div class="scrolldown" style="--color: white">
+                <div class="chevrons">
+                    <div class="chevrondown"></div>
+                    <div class="chevrondown"></div>
+                </div>
             </div>
-        </div>
+        </span>
     </header>
 
     <main>
