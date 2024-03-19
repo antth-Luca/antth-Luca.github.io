@@ -379,18 +379,15 @@
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             const instruc = document.querySelector('.instrucao');
-            const arrow = document.querySelector('.scroll-arrow');
             const name = document.querySelector('.name');
             if (window.scrollY > 0) {
                 header.style.height = '64px';
                 instruc.classList.add('hidden');
-                arrow.classList.add('hidden');
                 name.classList.remove('hidden');
                 name.classList.add('text');
             } else {
                 header.style.height = '100%';
                 instruc.classList.remove('hidden');
-                arrow.classList.remove('hidden');
                 name.classList.add('hidden');
                 name.classList.remove('text');
             }
