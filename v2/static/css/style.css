@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
+
+:root {
+    --fundo: #040F0F;
+    --contraste: #2D3A3A;
+    --verde: #4DA167;
+    --detalhe: #3BC14A;
+    --cor-fonte: #E5ECE9;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: var(--cor-fonte);
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--contraste);
+    color: var(--cor-fonte);
+}
