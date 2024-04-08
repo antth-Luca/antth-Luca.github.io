@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap');
 
+/* GERAL */
 :root {
     --fundo: #040F0F;
     --contraste: #2D3A3A;
@@ -17,7 +18,70 @@ body {
     margin: 0;
 }
 
-.card {
+/* HEADER */
+header {
+    margin-top: 32px !important ;
+}
+
+.cartao {
     background-color: var(--contraste);
     color: var(--cor-fonte);
+    border-radius: 8px;
+
+    & .cont-links {
+        background-color: var(--verde);
+        width: 100%;
+        height: 44px;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        & i, img {
+            color: var(--cor-fonte);
+        }
+    
+        & i:hover, img:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/* MAIN */
+main {
+    margin-top: 100px !important;
+}
+
+section:first-child {
+    margin-top: 0;
+}
+
+section {
+    margin-top: 80px;
+}
+
+.h4, .h6 {
+    color: var(--verde);
+}
+
+.lista li {
+    margin-bottom: 1rem;
+
+    & p {
+        margin-bottom: 0;
+    }
+
+    & small {
+        font-weight: 200;
+        font-size: 12px;
+    }
+}
+
+/* FOOTER */
+#cont-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
 }
