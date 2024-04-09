@@ -20,6 +20,10 @@ body {
     margin: 0;
 }
 
+::selection {
+    background-color: transparent;
+}
+
 /* CAPA ROLANTE */
 #capa-rolante {
     position: fixed;
