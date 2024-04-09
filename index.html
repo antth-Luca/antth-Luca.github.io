@@ -3,23 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em construção</title>
-    <style>
-        body {
-            background-color: #040F0F;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: sans-serif;
-            font-size: 24px;
-            height: 100vh;
-            text-align: center;
-        }
-    </style>
+    <link rel="shortcut icon" href="static/images/LA-sigla.svg" type="image/x-icon">
+    <title>Sobre mim | antthLuca</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
-    Desculpe, estamos em reforma... <br>
-    Em breve voltaremos!
+<body class="container-fluid">
+    <div id="capa-rolante">
+        <img id="LA" src="static/images/LA-sigla.svg">
+        <span id="instrucao">
+            Deslize!
+            <div class="scrolldown" style="--color: white">
+                <div class="chevrons">
+                    <div class="chevrondown"></div>
+                    <div class="chevrondown"></div>
+                </div>
+            </div>
+        </span>
+    </div>
+
+    <header class="row">
+        <div class="col-12 d-flex flex-column align-items-center">
+            <div class="cartao" style="width: 224px;">
+                <div class="card-body my-4 d-flex flex-column align-items-center">
+                    <img src="static/images/perfil.png" alt="Foto de Luca" width="88px">
+                    <div class="card-title mt-2">antthLuca</div>
+                    <div id="hr"></div>
+                    <div class="card-subtitle">Estudante</div>
+                </div>
+                <div class="cont-links">
+                    <a href="mailto:lucamafort05@gmail.com?subject=&body=" target="_blank" class="card-link">
+                        <i class="bi bi-envelope-at-fill"></i></a>
+                    <a href="https://t.me/antthLuca" target="_blank" class="card-link">
+                        <i class="bi bi-telegram"></i></a>
+                    <a href="http://www.linkedin.com/in/antth-Luca" target="_blank" class="card-link">
+                        <i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/antth-Luca" target="_blank" class="card-link">
+                        <i class="bi bi-github"></i></a>
+                    <a href="https://trailblazer.me/id/antth-Luca" target="_blank" class="card-link">
+                        <img src="static/images/salesforce.svg" alt="Ícone Salesforce" style="width: 16px;"></a>
+                    <a href="https://instagram.com/antth.luca" target="_blank" class="card-link">
+                        <i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-11 col-lg-6 mt-4">
+                <div class="text-efect">
+                    <div class="hidden" id="name">Olá, eu sou <span style="font-weight: 700;">Luca Anthony</span>!</span></div>
+                    <div class="hidden" id="anuncio">Um pouco sobre mim...</div>
+                </div>
+
+                <p style="text-align: justify;" id="resumo" class="hidden">
+                    Tenho 18 anos e moro na cidade de Astorga no Paraná. Desde janeiro de 2023 estou estudando arduamente para ser um desenvolvedor. Atualmente, estou no terceiro semestre do curso técnico de desenvolvimento de sistemas no IFPR - Campus Astorga e realizo cursos básicos e gratuitos para conhecer melhor a vasta área de T.I.
+                    Minha experiência se resume aos meus estudos e projetos pessoais. Assino os meus códigos como antthLuca.
+                    A minha área preferida é a de front-end e design, mas também me dou bem no back-end e ainda penso em seguir na área de gamedev.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="row">
+        <section class="col-8 mx-auto">
+            <h4 class="h4">
+                Formação acadêmica
+            </h4>
+            <ul class="lista">
+                <li>
+                    <p>
+                        Instituto Federal do Paraná, Campus Astorga - Técnico Subsequente Desenvolvimento de Sistemas
+                    </p>
+                    <small>FEVEREIRO DE 2023 - DEZEMBRO DE 2024</small>
+                </li>
+
+                <li>
+                    <p>
+                        Adolpho Oliveira Franco, Astorga - Ensino Médio Completo
+                    </p>
+                    <small>FEVEREIRO DE 2020 - DEZEMBRO DE 2022</small>
+                </li>
+            </ul>
+        </section>
+        <!-- Fim seção de formação -->
+        <section class="col-8 mx-auto">
+            <h4 class="h4">
+                Projetos pessoais
+            </h4>
+            <div class="accordion accordion-flush" id="acc-projetos">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item1">1. Rede social voltada a política - em produção</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="item1" data-bs-parent="#acc-projetos">
+                        <div class="accordion-body">
+                            Este é o meu mais extenso e recente projeto, portanto, ainda inacabado. Trabalho nele desde 19/08/2023, mas prefiro deixar para apresentar em detalhes quando estiver finalizado! Por enquanto, digo que estou usando o framework Django, banco de dados orientado a grafos Neo4j e, de forma superficial, algumas ferramentas como: Bootstrap, Crispy Forms, jQuery e HTMX.
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim item accordion 1 -->
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2">2. Dashboard com CRUD - finalizado</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="item2" data-bs-parent="#acc-projetos">
+                        <div class="accordion-body">
+                            Me foi proposto um desafio para tentar obter uma vaga de estágio: A construção de um dashboard. Este foi o meu primeiro dash e o finalizei em 5 dias. Optei por fazê-lo como uma aplicação WEB utilizando: framework Django, framework Bootstrap 5 e Bootstrap Icons e Chart.js. Pode encontrar o meu repositório <a href="https://github.com/antth-Luca/projDashboardDjango" target="_blank">aqui</a>!
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim item accordion 2 -->
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item3">3. CRUD com Python3 e MySQL - finalizado</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="item3" data-bs-parent="#acc-projetos">
+                        <div class="accordion-body">
+                            Esta é quase uma evolução do projeto anterior, não só login, mas um CRUD com interface e banco de dados. Pode encontrar o meu repositório <a href="https://github.com/antth-Luca/SistemaCadastro_MySQL" target="_blank">aqui</a>!
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim item accordion 3 -->
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item4">4. Tela de login com Python3 e SQLite - finalizado</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="item4" data-bs-parent="#acc-projetos">
+                        <div class="accordion-body">
+                            A primeira aventura com interface e banco de dados, mesmo que o mais simples possível, a gente nunca esquece. Pode encontrar o meu repositório <a href="https://github.com/antth-Luca/TelaDeLogin_SQLite" target="_blank">aqui</a>!
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim item accordion 4 -->
+            </div>
+        </section>
+        <!-- Fim seção de projetos -->
+        <section class="col-8 mx-auto">
+            <h4 class="h4">
+                Cursos realizados por conta
+            </h4>
+            <ul class="lista">
+                <li>Curso de Algoritmo e Lógica de Programação- Online, Curso em Vídeo (40 horas);</li>
+                <li>Cursos de linguagem Python 3, duas partes de três- Online, Curso em Vídeo (80 horas);</li>
+                <li>Curso de Hardware- Online, Curso em Vídeo (20 horas);</li>
+                <li>Cursos de linguagem Python 3, terceira parte- Online, Curso em Vídeo (40 horas);</li>
+                <li>Curso de Teoria Programação Orientada a Objetos- Online, Curso em Vídeo (7 horas);</li>
+                <li>Mini-curso de Python POO- Online, YouTube-canal Programador Lhama (7 horas);</li>
+                <li>Mini-curso de PyQt5-Interfaces Gráficas- Online, YouTube-canal Prof. Neto Paschoal (3 horas);</li>
+                <li>Curso de Bases Numéricas- Online, Curso em Vídeo (20 horas);</li>
+                <li>Curso de MySQL básico- Online, Curso em Vídeo (40 horas);</li>
+                <li>Curso de Java- Online, Curso em Vídeo (40 horas);</li>
+                <li>Curso de desenvolv. WEB, módulo 1- Online, Curso em Vídeo (40 horas);</li>
+                <li>Curso de Java POO- Online, Curso em Vídeo (40 horas);</li>
+                <li>Cursos de desenvolv. WEB, módulos 2 e 3- Online, Curso em Vídeo (80 horas);</li>
+                <li>Mini-curso de Django- Online, YouTube-canal Rafael Zottesso (9 horas);</li>
+                <li>Curso de JavaScript- Online, Curso em Vídeo (40 horas);</li>
+                <li>Imersão Front-End- Online, Alura (5 horas);</li>
+                <li>Curso de Redes de computadores- Online, Curso em Vídeo (20 horas);</li>
+                <li>Mini-curso de Bootstrap 5- Online, Youtube-canal Ricardo Maroquio (5.5 horas);</li>
+                <li>Curso de Marketing Digital- Online, Curso em Vídeo (40 horas);</li>
+                <li>Mini-curso de apresentação de funções básicas da Godot- Online, Youtube-canal Clécio Espindola GameDev (2.5 horas);</li>
+            </ul>
+            <h6 class="h6">Soma: 579 horas</h6>
+        </section>
+        <!-- Fim seção de cursos -->
+        <section class="col-8 mx-auto">
+            <h4 class="h4">
+                Me encontre
+            </h4>
+            <div id="cont-contato">
+                <a id="email" href="mailto:lucamafort05@gmail.com?subject=&body=" target="_blank">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <span>Email</span></a>
+                <a id="telegram" href="https://t.me/antthLuca" target="_blank">
+                    <i class="bi bi-telegram"></i>   
+                    <span>Telegram</span></a>
+                <a id="linkedin" href="http://www.linkedin.com/in/antth-Luca" target="_blank">
+                    <i class="bi bi-linkedin"></i>   
+                    <span>LinkedIn</span></a>
+                <a id="github" href="https://github.com/antth-Luca" target="_blank">
+                    <i class="bi bi-github"></i> 
+                    <span>GitHub</span></a>
+                <a id="trailblazer" href="https://trailblazer.me/id/antth-Luca" target="_blank">
+                    <img src="static/images/salesforce.svg" alt="Ícone Salesforce" style="width: 16px;"> 
+                    <span>I’m trailblazer</span></a>
+                <a id="instagram" href="https://instagram.com/antth.luca" target="_blank">
+                    <i class="bi bi-instagram"></i> 
+                    <span>Instagram</span></a>
+            </div>
+        </section>
+        <!-- Fim seção de contato -->
+    </main>
+
+    <footer class="row mx-auto position-relative">
+        <div id="footer">
+            <img src="static/images/LA-sigla.svg" width="48px">
+            <div id="vr"></div>
+            <p id="despedida">
+                Este é quem sou, <br>
+                Obrigado por chegar <br>
+                até aqui!
+            </p>
+        </div>
+
+        <div class="col-12 d-flex flex-column align-items-center position-absolute bottom-0">
+            <span class="mb-3" id="credit">© 2024 antthLuca</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Capa rolante -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const capa = document.getElementById('capa-rolante');
+            const instruc = document.getElementById('instrucao');
+            const name = document.getElementById('name');
+            const anuncio = document.getElementById('anuncio');
+            const resumo = document.getElementById('resumo');
+
+            if (window.scrollY > 0) {
+                capa.style.height = '64px';
+                instruc.classList.add('hidden');
+                name.classList.remove('hidden');
+                name.classList.add('text-name');
+                setTimeout(()=>{
+                    anuncio.classList.remove('hidden');
+                    anuncio.classList.add('text-anuncio');
+
+                    setTimeout(()=>{
+                        resumo.classList.remove('hidden');
+                    }, 1800);
+                }, 1500);
+            } else {
+                capa.style.height = '100%';
+                instruc.classList.remove('hidden');
+                name.classList.add('hidden');
+                name.classList.remove('text-name');
+                resumo.classList.add('hidden');
+                anuncio.classList.remove('text-anuncio');
+            }
+        });
+    </script>
 </body>
 </html>
