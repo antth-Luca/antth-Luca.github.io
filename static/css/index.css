@@ -1,0 +1,431 @@
+/* CAPA ROLANTE */
+#capa-rolante {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fundo-capa);
+    border-radius: 0 0 32px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height 1s ease;
+}
+
+#LA {
+    height: 48px;
+}
+
+#instrucao {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 13vh;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+/* Elemento de UIverse. SCROLL animado. Créditos à @mrhyddenn */
+.scrolldown {
+    --color: white;
+    --sizeX: 32px;
+    --sizeY: 52px;
+    position: relative;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@keyframes scrolldown-anim {
+    0% {
+    opacity: 0;
+    height: 6px;
+    }
+
+    40% {
+    opacity: 1;
+    height: 10px;
+    }
+
+    80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+    }
+
+    100% {
+    height: 3px;
+    opacity: 0;
+    }
+}
+
+.chevrons {
+    padding: 6px 0 0 0;
+    margin-left: -3px;
+    margin-top: 48px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: solid var(--color);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+    animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+    animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 0.5;
+    }
+}
+/* Fim CSS do SCROLL */
+
+.hidden {
+    opacity: 0;
+}
+
+/* HEADER */
+header {
+    margin-top: 384px !important ;
+}
+
+.cartao {
+    background-color: var(--contraste);
+    color: var(--cor-fonte);
+    border-radius: 8px;
+
+    transition: 
+        transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), 
+        box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    & .card-head {
+        background-color: var(--principal);
+        border-radius: 8px 8px 0 0;
+
+        & p {
+            margin-top: 16px;
+        }
+    }
+
+    & img {
+        border-radius: 50%;
+    }
+
+    & #hr {
+        height: 1px;
+        width: 120px;
+        background-color: var(--detalhe);
+        border-radius: 50%;
+        margin: 0 20px 0 20px;
+    }
+
+    & .cont-links {
+        background-color: var(--principal);
+        width: 100%;
+        height: 44px;
+        border-radius: 0 0 8px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        & i, img {
+            color: var(--cor-fonte);
+        }
+    
+        & i:hover, img:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.cartao:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px -6px rgba(0, 0, 0, 0.5);
+}
+
+.container-bubbles {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    min-width: 92px;
+    min-height: 224px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble {
+    width: 36px;
+    height: 36px;
+    background-image: radial-gradient(8% 8% at 22% 28%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 23% 27%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 24% 26%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 25% 25%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 26% 24%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 27% 23%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%),
+		radial-gradient(8% 8% at 28% 22%,hsl(0,0%,100%) 45%,hsla(0,0%,100%,0) 50%);
+    box-shadow: 0 -0.06em 0.1em hsl(0,90%,100%) inset,
+            0 -0.15em 0.4em hsl(157, 90%, 45%) inset,
+            0 0.05em 0.05em hsl(157, 90%, 45%) inset,
+            0.05em 0 0.1em hsl(0,90%,100%) inset,
+            -0.05em 0 0.1em hsl(0,90%,100%) inset,
+            0 0.1em 0.4em hsl(165, 90%, 60%) inset;
+    border-radius: 50%;
+
+    opacity: 0;
+    transition: 
+        opacity 0.2s ease-in-out, 
+        transform 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--cor-fonte);
+
+    & img, i {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cartao:hover .bubble:nth-child(1) {
+    opacity: 1;
+    transform: translate(40px, -40px);
+}
+
+.cartao:hover .bubble:nth-child(2) {
+    opacity: 1;
+    transform: translate(60px, -20px);
+}
+
+.cartao:hover .bubble:nth-child(3) {
+    opacity: 1;
+    transform: translate(50px, 0);
+}
+
+.cartao:hover .bubble:nth-child(4) {
+    opacity: 1;
+    transform: translate(40px, 20px);
+}
+
+/* MAIN */
+main {
+    margin-top: 100px !important;
+}
+
+section:first-child {
+    margin-top: 0 !important;
+}
+
+section {
+    padding-top: 80px !important;
+}
+
+/* Efeito de digitação */
+.text-efect {
+    height: 44px;
+    display: grid;
+    place-items: center;
+}
+
+#name {
+    font-weight: 500;
+}
+
+.text-name {
+    width: 198px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 1.5s steps(25), blink .5;
+}
+
+#anuncio {
+    font-weight: 300;
+}
+
+.text-anuncio {
+    width: 172px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 1.5s steps(21), blink .5;
+}
+
+#resumo {
+    transition: opacity 1s ease;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: #151111;
+    }
+}
+/* Fim do efeito de digitação */
+
+.lista li {
+    margin-bottom: 1rem;
+
+    & p {
+        margin-bottom: 0;
+    }
+
+    & small {
+        font-weight: 300;
+        font-size: 12px;
+    }
+}
+
+#cont-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+
+    & a {
+        font-weight: 400;
+        color: var(--cor-fonte);
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 32px;
+        background-color: var(--contraste);
+    }
+
+    & a:hover {
+        cursor: pointer;
+    }
+}
+
+#email:hover{
+    color: #EA4335;
+    transition: color 0.6s ease-in;
+}
+#telegram:hover{
+    color: #1a8ad5;
+    transition: color 0.6s ease-in;
+} 
+#linkedin:hover{
+    color: #71B7FB;
+    transition: color 0.6s ease-in;
+} 
+#github:hover{
+    color: #373C9D;
+    transition: color 0.6s ease-in;
+} 
+#trailblazer:hover{
+    color: #00A1E0;
+    transition: color 0.6s ease-in;
+}
+#trailblazer:hover svg path {
+    fill: #00A1E0;
+    transition: fill 0.6s ease-in;
+}
+#instagram:hover{
+    color: #FF1C52;
+    transition: color 0.6s ease-in;
+}
+
+/* ACCORDIONs in MAIN */
+.accordion {
+    & button {
+        background-color: var(--fundo);
+        color: var(--cor-fonte);
+        outline: none;
+    }
+
+    & button::after {
+        background-image: none;
+        content: "\F229";
+        font-family: Bootstrap-icons;
+    }
+
+    & button:focus {
+        box-shadow: none;
+    }
+
+    & button:not(.collapsed) {
+        background-color: var(--contraste);
+        color: var(--detalhe);
+        box-shadow: none;
+    }
+
+    & .accordion-body {
+        background-color: var(--contraste);
+        color: var(--cor-fonte);
+
+        & a {
+            position: relative;
+            text-decoration: none;
+            color: var(--cor-fonte);
+        }
+
+        & a::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--detalhe);
+        }
+    }
+}

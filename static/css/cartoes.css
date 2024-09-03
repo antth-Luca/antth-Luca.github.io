@@ -1,0 +1,22 @@
+.card {
+    background-color: var(--contraste);
+    color: var(--cor-fonte);
+    min-height: 200px;
+
+    & .card-title {
+        color: var(--principal);
+    }
+}
+
+.card-empty {
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & i {
+            font-size: 32px;
+        }
+    }
+}

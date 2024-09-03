@@ -1,0 +1,35 @@
+/* GLOBAL */
+h4, .h4 {
+    margin-top: 80px;
+}
+
+/* SOBREPOSIÇÃO BOOTSTRAP */
+.btn-primary {
+    background-color: var(--principal);
+    border-color: var(--detalhe);
+}
+
+.btn-primary:hover {
+    background-color: var(--detalhe);
+    border-color: var(--detalhe);
+}
+
+/* DEMAIS ELEMENTOS */
+#apresentacao {
+    & img {
+        width: 64px;
+    }
+
+    & h6 {
+        opacity: .8;
+        font-size: 12px;
+    }
+}
+
+.clicavel {
+    cursor: pointer;
+}
+
+.clicavel:hover {
+    color: var(--principal);
+}

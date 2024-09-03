@@ -1,0 +1,24 @@
+/* GLOBAL */
+h4, .h4 {
+    margin-top: 80px;
+}
+
+/* HEADER */
+#secao-ntrw {
+    & a {
+        color: var(--cor-fonte);
+        text-decoration: none;
+    }
+
+    & img {
+        width: 88px;
+    }
+
+    & p {
+        margin-bottom: 0;
+    }
+
+    & p:nth-child(3) {
+        font-size: 2.2rem
+    }
+}

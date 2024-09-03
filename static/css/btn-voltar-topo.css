@@ -1,0 +1,21 @@
+#btn-topo {
+    height: 56px;
+    width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-capa);
+    border-radius: 12px;
+    color: var(--cor-fonte);
+    text-decoration: none;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+
+    z-index: 1000;
+}
+
+#btn-topo:hover {
+    color: var(--detalhe);
+}
