@@ -19,7 +19,7 @@ window.addEventListener('scroll', function() {
             }, 1800);
         }, 1500);
     } else {
-        capa.style.height = '100%';
+        capa.style.height = '100vh';
         instruc.classList.remove('hidden');
         name.classList.add('hidden');
         name.classList.remove('text-name');

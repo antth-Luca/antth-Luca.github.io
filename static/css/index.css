@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--fundo-capa);
     border-radius: 0 0 32px 32px;
@@ -194,7 +194,7 @@ header {
 .container-bubbles {
     position: absolute;
     top: 30%;
-    left: 90%;
+    left: 70%;
     min-width: 92px;
     min-height: 224px;
     overflow: visible;
@@ -239,6 +239,11 @@ header {
         justify-content: center;
         align-items: center;
     }
+}
+
+.cartao:hover .container-bubbles {
+    top: 30%;
+    left: 90%;
 }
 
 .cartao:hover .bubble:nth-child(1) {

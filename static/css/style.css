@@ -4,6 +4,8 @@
 /* GERAL */
 html {
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,19 +13,25 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: var(--cor-fonte);
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    overflow-x: hidden;
 }
 
 .h4, .h6 {
     color: var(--principal);
 }
 
+main {
+    padding: 0 12px 0 12px;
+}
+
 /* FOOTER */
 footer {
     margin-top: 80px !important;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 228px;
     background-color: var(--contraste);
     border-radius: 16px 16px 0 0;
