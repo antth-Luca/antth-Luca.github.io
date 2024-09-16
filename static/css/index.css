@@ -200,6 +200,10 @@ header {
     overflow: visible;
     display: flex;
     flex-direction: column;
+
+    transition:
+        top ease-in-out .5s,
+        left ease-in-out .5s;
 }
 
 .bubble {
