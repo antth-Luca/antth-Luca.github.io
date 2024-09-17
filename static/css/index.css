@@ -194,16 +194,14 @@ header {
 .container-bubbles {
     position: absolute;
     top: 30%;
-    left: 70%;
+    left: 50%;
     min-width: 92px;
     min-height: 224px;
     overflow: visible;
     display: flex;
     flex-direction: column;
 
-    transition:
-        top ease-in-out 0.5s,
-        left ease-in-out 0.5s;
+    transition: left ease-in-out 0.2s;
 }
 
 .bubble {
@@ -226,9 +224,8 @@ header {
 
     opacity: 0;
     transition: 
-        opacity 0.2s ease-in-out, 
+        opacity 0.2s ease-in, 
         transform 0.5s ease-in-out;
-    pointer-events: none;
 
     display: flex;
     justify-content: center;
@@ -251,25 +248,21 @@ header {
 }
 
 .cartao:hover .bubble:nth-child(1) {
-    pointer-events: all;
     opacity: 1;
     transform: translate(40px, -40px);
 }
 
 .cartao:hover .bubble:nth-child(2) {
-    pointer-events: all;
     opacity: 1;
     transform: translate(60px, -20px);
 }
 
 .cartao:hover .bubble:nth-child(3) {
-    pointer-events: all;
     opacity: 1;
     transform: translate(50px, 0);
 }
 
 .cartao:hover .bubble:nth-child(4) {
-    pointer-events: all;
     opacity: 1;
     transform: translate(40px, 20px);
 }
