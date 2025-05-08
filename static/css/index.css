@@ -299,22 +299,6 @@ section {
     animation: typing 1.5s steps(25), blink .5;
 }
 
-#anuncio {
-    font-weight: 300;
-}
-
-.text-anuncio {
-    width: 172px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: typing 1.5s steps(21), blink .5;
-}
-
-#resumo {
-    transition: opacity 1s ease;
-}
-
 @keyframes typing {
     from {
         width: 0
