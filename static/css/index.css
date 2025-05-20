@@ -419,3 +419,37 @@ section {
         }
     }
 }
+
+.modal-content {
+    background-color: var(--fundo);
+
+    & .modal-header {
+        border-bottom: none !important;
+    }
+
+    & .card {
+        background-color: var(--fundo);
+    }
+}
+
+#acesso-curso {
+    position: relative;
+    color: var(--cor-fonte);
+    text-decoration: none;
+}
+
+#acesso-curso::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--detalhe);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#acesso-curso:hover::after {
+    width: 0;
+    left: 0;
+}
