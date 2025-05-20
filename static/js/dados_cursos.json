@@ -1,0 +1,236 @@
+{
+    "logica": {
+        "titulo": "Curso de Algoritmo e Lógica de Programação",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "26/01/2023",
+        "termino": "03/02/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/"
+    },
+    "python1": {
+        "titulo": "Curso de Python 3 - Parte 1",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "14/02/2023",
+        "termino": "22/02/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/python-3-mundo-1/"
+    },
+    "python2": {
+        "titulo": "Curso de Python 3 - Parte 2",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "23/02/2023",
+        "termino": "06/03/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/python-3-mundo-2/"
+    },
+    "python3": {
+        "titulo": "Curso de Python 3 - Parte 3",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "07/03/2023",
+        "termino": "28/04/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/python-3-mundo-3/"
+    },
+    "hardware": {
+        "titulo": "Curso de Hardware",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "20",
+        "inicio": "04/04/2023",
+        "termino": "18/04/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/hardware/"
+    },
+    "poo-teoria": {
+        "titulo": "Curso de Teoria POO",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "7",
+        "inicio": "28/04/2023",
+        "termino": "29/04/2023",
+        "disponivel": "https://www.youtube.com/playlist?list=PL5psm_OUggOLN-LHc6mmTzYaq4FciH5Hz"
+    },
+    "python-poo": {
+        "titulo": "Mini-curso de Python POO",
+        "instituicao": "YouTube - canal Programador Lhama",
+        "modalidade": "Online",
+        "duracao": "7",
+        "inicio": "30/04/2023",
+        "termino": "27/05/2023",
+        "disponivel": "https://www.youtube.com/playlist?list=PL5psm_OUggOLldbDh3IHxmn3qQiNSy7iw"
+    },
+    "pyqt": {
+        "titulo": "Mini-curso de Interfaces Gráficas com PyQt5",
+        "instituicao": "YouTube - canal Prof. Neto Pascoal",
+        "modalidade": "Online",
+        "duracao": "3",
+        "inicio": "27/05/2023",
+        "termino": "08/06/2023",
+        "disponivel": "https://www.youtube.com/playlist?list=PLwsAoT89dh3qJ8JcprQ8AuHY8AGasvx4G"
+    },
+    "bases-numericas": {
+        "titulo": "Curso de Bases Numéricas",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "20",
+        "inicio": "08/06/2023",
+        "termino": "09/06/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/bases-numericas/"
+    },
+    "sql": {
+        "titulo": "Curso de MySQL",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "10/06/2023",
+        "termino": "15/06/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/mysql/"
+    },
+    "salesforce-basico": {
+        "titulo": "Noções básicas da plataforma Salesforce",
+        "instituicao": "Trailhead by Salesforce",
+        "modalidade": "Online",
+        "duracao": "1",
+        "inicio": "23/06/2023",
+        "termino": "23/06/2023",
+        "disponivel": "https://trailhead.salesforce.com/pt-BR/content/learn/modules/starting_force_com"
+    },
+    "excel": {
+        "titulo": "Curso de Excel",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "23/06/2023",
+        "termino": "24/06/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/excell/"
+    },
+    "java": {
+        "titulo": "Curso de Java básico",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "27/06/2023",
+        "termino": "11/07/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/java-basico/"
+    },
+    "java-poo": {
+        "titulo": "Curso de Java POO",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "13/07/2023",
+        "termino": "18/07/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/java-poo/"
+    },
+    "web1": {
+        "titulo": "Curso de desenvolv. WEB - Módulo 1",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "12/07/2023",
+        "termino": "13/07/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/html5-css3-modulo1/"
+    },
+    "web2": {
+        "titulo": "Curso de desenvolv. WEB - Módulo 2",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "09/08/202",
+        "termino": "24/08/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/"
+    },
+    "web3": {
+        "titulo": "Curso de desenvolv. WEB - Módulo 3",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "25/08/2023",
+        "termino": "21/10/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-3-de-5-40-horas/"
+    },
+    "django": {
+        "titulo": "Curso de desenvolv. Django",
+        "instituicao": "YouTube - canal Rafael Zottesso",
+        "modalidade": "Online",
+        "duracao": "9",
+        "inicio": "não registrado",
+        "termino": "não registrado",
+        "disponivel": "https://www.youtube.com/playlist?list=PLjv17QYEBJPpd6nI-MXpIa4qR7prKfPQz"
+    },
+    "js": {
+        "titulo": "Curso de JavaScript",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "21/10/2023",
+        "termino": "23/10/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/javascript/"
+    },
+    "redes": {
+        "titulo": "Curso de Redes de Computadores",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "20",
+        "inicio": "01/02/2024",
+        "termino": "09/02/2024",
+        "disponivel": "https://www.cursoemvideo.com/curso/redes-de-computadores/"
+    },
+    "bootstrap": {
+        "titulo": "Mini-curso de Bootstrap 5",
+        "instituicao": "YouTube - canal Ricardo Maroquio",
+        "modalidade": "Online",
+        "duracao": "5.5",
+        "inicio": "não registrado",
+        "termino": "não registrado",
+        "disponivel": "https://www.youtube.com/playlist?list=PL0YuSuacUEWuJN3qb6NP15bzqd8w_oAj7"
+    },
+    "marketing": {
+        "titulo": "Curso de Marketing Degital",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "25/03/2024",
+        "termino": "03/04/2024",
+        "disponivel": "https://www.cursoemvideo.com/curso/marketing-digital/"
+    },
+    "godot": {
+        "titulo": "Mini-curso de funções base da Godot",
+        "instituicao": "YouTube - canal Clécio Espindola GameDev",
+        "modalidade": "Online",
+        "duracao": "2.5",
+        "inicio": "não registrado",
+        "termino": "não registrado",
+        "disponivel": "https://www.youtube.com/playlist?list=PL-oJEh-N3A3TsLK-whzKXwqTK0Mn0Gz6G"
+    },
+    "jogo-plataforma": {
+        "titulo": "Tutorial de jogo de plataforna na Godot",
+        "instituicao": "YouTube - canal Clécio Espindola GameDev",
+        "modalidade": "Online",
+        "duracao": "9.5",
+        "inicio": "20/04/2024",
+        "termino": "Término 01/05/2024",
+        "disponivel": "https://www.youtube.com/playlist?list=PL-oJEh-N3A3SOPWuMuulbnJv0BFgvBnVG"
+    },
+    "angular-springboot": {
+        "titulo": "Curso full-stack com Spring Boot e Angular",
+        "instituicao": "DGS Cursos - prof. Douglas Lopes Farias",
+        "modalidade": "Online",
+        "duracao": "120",
+        "inicio": "05/09/2024",
+        "termino": "13/09/2024",
+        "disponivel": "https://dgscursos.com.br/Programador_Full_Stack.html"
+    },
+    "node": {
+        "titulo": "Mini-curso de Node.js",
+        "instituicao": "Youtube - canal Victor Lima",
+        "modalidade": "Online",
+        "duracao": "9.3",
+        "inicio": "28/04/2025",
+        "termino": "08/05/2025",
+        "disponivel": "https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B"
+    }
+}
