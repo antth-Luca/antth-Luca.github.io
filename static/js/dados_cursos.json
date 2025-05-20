@@ -1,4 +1,13 @@
 {
+    "git": {
+        "titulo": "Curso de Git e GitHub",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "20",
+        "inicio": "25/01/2023",
+        "termino": "26/01/2023",
+        "disponivel": "https://www.cursoemvideo.com/curso/curso-de-git-e-github/"
+    },
     "logica": {
         "titulo": "Curso de Algoritmo e Lógica de Programação",
         "instituicao": "Curso em Vídeo",
@@ -177,6 +186,15 @@
         "duracao": "20",
         "inicio": "01/02/2024",
         "termino": "09/02/2024",
+        "disponivel": "https://www.cursoemvideo.com/curso/redes-de-computadores/"
+    },
+    "linux": {
+        "titulo": "Curso de Linux",
+        "instituicao": "Curso em Vídeo",
+        "modalidade": "Online",
+        "duracao": "40",
+        "inicio": "10/02/2024",
+        "termino": "11/02/2024",
         "disponivel": "https://www.cursoemvideo.com/curso/redes-de-computadores/"
     },
     "bootstrap": {
