@@ -21,10 +21,18 @@
 }
 
 :root {
-    --glass-bg: rgba(15, 18, 24, .6);
-    --glass-border: rgba(255, 255, 255, .1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, .5), inset -2px -2px 6px rgba(0, 0, 0, 0.2);
-    --reflection: linear-gradient(135deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .05) 100%);
+    --glass-blur: blur(8px);
+    --glass-bg: rgba(15, 18, 24, .2);
+    --glass-border: rgba(255, 255, 255, .2);
+    --glass-shadow:
+        0 8px 32px rgba(0, 0, 0, .55),
+        inset -2px -2px 0 rgba(255, 255, 255, 0.1);
+    --reflection: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, .6) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(255, 255, 255, .05) 100%
+    );
 }
 
 body {
@@ -46,15 +54,15 @@ body {
     overflow: hidden;
 
     > div {
-        filter: blur(80px);
+        filter: blur(52px);
     }
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.3;
-    animation: blob-float 16s infinite alternate;
+    opacity: 0.25;
+    animation: blob-float 8s infinite alternate;
     width: 300px;
     height: 300px;
     background: var(--color-brand-300);
@@ -64,31 +72,31 @@ body {
 
 @keyframes blob-float {
     from { transform: translate(0, 0) scale(1); }
-    to { transform: translate(80px, 80px) scale(1.1); }
+    to { transform: translate(120px, 120px) scale(1.1); }
 }
 
 /* Glassmorphism */
 @utility glass {
+    position: relative;
     background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
-    position: relative;
-}
 
-.glass::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: var(--reflection);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: var(--reflection);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
 }
 
 @utility glass-card {
@@ -113,19 +121,4 @@ body {
 .glass-card:hover {
     transform: translateY(-5px);
     border-color: rgba(255, 255, 255, .3);
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-.animate-float {
-    animation: float 6s ease-in-out infinite;
-}
-
-/* Hero Section */
-.profile-pic {
-    width: 256px;
 }
