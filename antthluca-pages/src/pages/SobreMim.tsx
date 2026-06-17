@@ -1,8 +1,11 @@
 import { useEffect } from "react"
 import { CONFIG } from "../config"
 import ContentContainer from "../components/ContentContainer";
-import TopNavBar from "../components/TopNavBar";
+import { TopNavBar } from "../components/TopNavBar";
 import { ROUTES } from "../routes";
+import { ArrowRight } from "lucide-react";
+import Footer from "../components/Footer";
+import Badge from "../components/Badge";
 
 export default function SobreMim() {
   useEffect(() => {
@@ -10,17 +13,17 @@ export default function SobreMim() {
   }, []);
 
   const links = [
-    { url: '#', label: 'Início' },
-    { url: ROUTES.EXPERIENCIA, label: 'Experiência' },
-    { url: ROUTES.PROJETOS, label: 'Projetos' },
+    { url: "#", label: "Início" },
+    { url: "#experiencia", label: "Experiência" },
+    { url: "#projetos", label: "Projetos" },
   ];
 
   return (
       <ContentContainer content={<>
         <TopNavBar
-          homeURL='#'
-          logoSrc='/LA-sigla.svg'
-          title='antthLuca'
+          homeURL="#"
+          logoSrc="/LA-sigla.svg"
+          title="antthLuca"
           links={links}
         />
 
@@ -51,13 +54,13 @@ export default function SobreMim() {
 
         {/* About Me Section */}
         <section className="relative pb-20 px-6 max-w-6xl mx-auto">
+          <h4 className="text-xl font-bold text-brand-500 mb-4">Sobre mim</h4>
           <div className="glass-card p-6 md:p-8 mb-16">
-            <h4 className="text-xl font-bold text-brand-500 mb-4">Sobre mim</h4>
             <p className="text-justify text-space-tx/90 leading-relaxed">
               A escola disse "estude programação", mas na minha primeira tentativa, eu odiei. 
               Depois vi aquelas letrinhas coloridas no monitor de um primo e ouvi 
               <span className="italic text-brand-300"> "você é bom de lógica, vai se dar bem com programação"</span>, 
-              então houve mais uma tentativa e eu me apaixonou!
+              então houve mais uma tentativa e eu me apaixonei!
             </p>
             <p className="text-justify text-space-tx/90 leading-relaxed mt-4">
               Hoje, com 21 anos, sou formado em Técnico de Desenvolvimento de Sistemas pelo IFPR - Campus Astorga e 
@@ -75,8 +78,8 @@ export default function SobreMim() {
             <div className="glass-card p-5 flex flex-col gap-3">
               <h6 className="text-lg font-semibold text-brand-400 border-b border-white/10 pb-2">Frontend</h6>
               <div className="flex flex-wrap gap-2">
-                <span className="badge">Angular</span>
-                <span className="badge">React</span>
+                <Badge content='Angular' />
+                <Badge content='React' />
               </div>
             </div>
 
@@ -84,9 +87,9 @@ export default function SobreMim() {
             <div className="glass-card p-5 flex flex-col gap-3">
               <h6 className="text-lg font-semibold text-brand-400 border-b border-white/10 pb-2">Backend</h6>
               <div className="flex flex-wrap gap-2">
-                <span className="badge">Django</span>
-                <span className="badge">Spring Boot</span>
-                <span className="badge">Express.js</span>
+                <Badge content='Django' />
+                <Badge content='Spring Boot' />
+                <Badge content='Express.js' />
               </div>
             </div>
 
@@ -94,9 +97,9 @@ export default function SobreMim() {
             <div className="glass-card p-5 flex flex-col gap-3">
               <h6 className="text-lg font-semibold text-brand-400 border-b border-white/10 pb-2">Databases</h6>
               <div className="flex flex-wrap gap-2">
-                <span className="badge">SQL</span>
-                <span className="badge">Neo4j</span>
-                <span className="badge">MongoDB</span>
+                <Badge content='SQL' />
+                <Badge content='Neo4j' />
+                <Badge content='MongoDB' />
               </div>
             </div>
 
@@ -104,8 +107,8 @@ export default function SobreMim() {
             <div className="glass-card p-5 flex flex-col gap-3">
               <h6 className="text-lg font-semibold text-brand-400 border-b border-white/10 pb-2">Gamedev</h6>
               <div className="flex flex-wrap gap-2">
-                <span className="badge">Godot & GDScript</span>
-                <span className="badge">Minecraft NeoForge</span>
+                <Badge content='Godot & GDScript' />
+                <Badge content='Minecraft NeoForge' />
               </div>
             </div>
 
@@ -113,7 +116,7 @@ export default function SobreMim() {
         </section>
 
         {/* Journey Section */}
-        <section className="relative pb-20 px-6 max-w-6xl mx-auto">
+        <section id="experiencia" className="relative pb-20 px-6 max-w-6xl mx-auto">
           <h4 className="text-xl font-bold text-brand-500 mb-4">Experiência & Formação</h4>
           <div className="relative border-l-2 border-brand-800/40 ml-4 md:ml-6 flex flex-col gap-8">
             
@@ -154,9 +157,35 @@ export default function SobreMim() {
                 </p>
               </div>
             </div>
-          </div>
 
+          </div>
         </section>
+
+        {/* CTA Section */}
+        <section id="projetos" className="relative pb-20 px-6 max-w-6xl mx-auto">
+          <h4 className="text-xl font-bold text-brand-500 mb-4">Portfólio & Devlog</h4>
+          <div className="glass-card p-6 md:p-8 mb-16">
+
+            <h3 className="font-bold text-space-tx mb-4">
+              Quer ver minhas criações de perto?
+            </h3>
+            <p className="text-space-tx/70 max-w-xl">
+              Explore meus sistemas concluídos, jogos independentes e acompanhe o roadmap em tempo real dos meus projetos ativos.
+            </p>
+            <div className="w-full md:w-auto flex justify-center">
+              <a
+                href={ROUTES.PROJETOS}
+                className="group flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-4 rounded-xl transition-all duration-300 shadow-lg shadow-brand-500/20 hover:shadow-brand-600/30 w-full sm:w-auto justify-center"
+              >
+                Conhecer Projetos
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        <Footer />
       </>}/>
   )
 }
