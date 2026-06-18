@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react"
 import React from "react"
 
 interface LinkData {
-    url: string
+    onClick: () => void
     label: string
 }
 
@@ -30,8 +30,8 @@ export const TopNavBar: React.FC<TNBProps> = ({ homeURL, logoSrc, title, links }
 
                 <div className="hidden md:flex items-center gap-8 px-2 md:px-3 text-sm font-medium text-slate-300">
                     {
-                        links.map(({ url, label }) => (
-                            <a href={url} className="hover:text-brand-600 transition-colors">{label}</a>
+                        links.map(({ onClick, label }) => (
+                            <a onClick={onClick} className="hover:text-brand-600 transition-colors">{label}</a>
                         ))
                     }
                 </div>
@@ -57,8 +57,16 @@ export const TopNavBar: React.FC<TNBProps> = ({ homeURL, logoSrc, title, links }
 
                         <div className="flex flex-col gap-6 flex-grow">
                             {
-                                links.map(({ url, label }) => (
-                                    <a href={url} onClick={() => setIsMenuOpen(false)} className="text-lg font-bold text-slate-900 dark:text-white tracking-tighter">{label}</a>
+                                links.map(({ onClick, label }) => (
+                                    <a
+                                        onClick={() => {
+                                            setIsMenuOpen(false)
+                                            onClick()
+                                        }}
+                                        className="text-lg font-bold text-slate-900 dark:text-white tracking-tighter"
+                                    >
+                                        {label}
+                                    </a>
                                 ))
                             }
                         </div>
