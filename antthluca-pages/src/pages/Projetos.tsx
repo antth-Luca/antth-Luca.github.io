@@ -153,7 +153,8 @@ export default function Projetos() {
                 {currentTab === "beta" && (
                     <div className="grid grid-cols-1 gap-6 animate-in fade-in duration-300">
                     
-                        <div className="flex flex-col gap-3 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar">
+                        <div className="flex flex-col gap-3 max-h-[350px] overflow-y-auto pr-2 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:glass-inner [&::-webkit-scrollbar-thumb]:bg-brand-900 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-brand-800">
+
                             {[
                                 { c: false, t: "Jogador" },
                                 { c: false, t: "Mundo base (superfície)" },
@@ -166,13 +167,10 @@ export default function Projetos() {
                                 { c: false, t: "Primeiro inimigo: Zumbi" },
                                 { c: false, t: "Sistema de dano" },
                                 { c: false, t: "Sistema de ressurreição do Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
-                                { c: false, t: "Jogador" },
+                                { c: false, t: "Pausa de mundo (gerenciar multiplayer)" },
+                                { c: false, t: "Sistema de tempo (com efeitos de dia e noite)" },
+                                { c: false, t: "Estrutura Cama e Jogador poder dormir" },
+                                { c: false, t: "Sistema de fome" }
                             ].map((item) => (
                                 <div className="p-3 border rounded-xl flex items-center justify-between text-xs transition-all text-space-tx/50 bg-white/5 border-white/5">
                                     <div className="flex items-center gap-3">
@@ -192,7 +190,7 @@ export default function Projetos() {
 
                 {/* ================= CONTEÚDO DA ABA 2: TIMELINE DE VERSÕES ================= */}
                 {currentTab === "versoes" && (
-                    <div className="space-y-3 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar animate-in fade-in duration-300">
+                    <div className="space-y-3 max-h-[350px] overflow-y-auto pr-2 animate-in fade-in duration-300 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:glass-inner [&::-webkit-scrollbar-thumb]:bg-brand-900 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-brand-800">
                         {[
                             { v: "v1.26-prealpha", t: "Fase Pré-alpha (Ciclo Dia/Noite, Fome, Fabricação)", s: "Em Desenvolvimento", c: "text-brand-400 bg-brand-500/10 border-brand-500/20" },
                             { v: "v1.26-alpha", t: "Fase Alpha (Chefes, Relíquias e Cultivo)", s: "Planejada", c: "text-space-tx/50 bg-white/5 border-white/5" },
