@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: '/antthluca-pages/',
+  base: '/antthluca-pages',
 })
