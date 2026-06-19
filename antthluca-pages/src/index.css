@@ -18,9 +18,8 @@
     --color-primary: var(--color-brand-500);
     --color-accent: var(--color-brand-300);
     --color-contrast: #008EC1;
-}
 
-:root {
+
     --glass-blur: blur(8px);
     --glass-bg: rgba(15, 18, 24, .2);
     --glass-border: rgba(255, 255, 255, .2);
@@ -79,8 +78,8 @@ body {
 @utility glass {
     position: relative;
     background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
     border: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
 
