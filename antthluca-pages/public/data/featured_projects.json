@@ -1,0 +1,66 @@
+[
+    {
+        "title": "DingHome",
+        "description": "Campainha digital acessível.",
+        "category": "sistema",
+        "deploy": "https://dinghome.pages.dev"
+    },
+    {
+        "title": "Blue Hearts",
+        "description": "Minecraft: Novo tipo de saúde.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/ModBlueHearts",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/blue-hearts"
+    },
+    {
+        "title": "Brutore",
+        "description": "Minecraft: Restaure minérios brutos.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/ModBrutore",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/brutore"
+    },
+    {
+        "title": "Sunlit Skills",
+        "description": "Minecraft: Árvore de habilidades Sunlit.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/ModSunlitSkills",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/sunlit-skills"
+    },
+    {
+        "title": "JSON Lang na Godot",
+        "description": "Tradutor com JSON na Godot.",
+        "category": "contribuição",
+        "github": "https://github.com/antth-Luca/godot-Custom-Translation-System"
+    },
+    {
+        "title": "Deathrium Collection",
+        "description": "Minecraft: Novo minério e coleção de relíquias.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/ModDeathriumCollection",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/deathrium-collection"
+    },
+    {
+        "title": "Guia Django",
+        "description": "Guia de início no Django Framework.",
+        "category": "contribuição",
+        "github": "https://github.com/antth-Luca/Django_start_guide"
+    },
+    {
+        "title": "Guia Pytest",
+        "description": "Guia de início no Pytest.",
+        "category": "contribuição",
+        "github": "https://github.com/antth-Luca/Pytest_start_guide"
+    },
+    {
+        "title": "CRUD com Django",
+        "description": "CRUD com Dashboard embutido.",
+        "category": "sistema",
+        "github": "https://github.com/antth-Luca/projDashboardDjango"
+    },
+    {
+        "title": "SpringBoot + SpringSecurity",
+        "description": "Experimentação do SpringBoot com segurança.",
+        "category": "estudo",
+        "github": "https://github.com/antth-Luca/projEstudo-SpringSecurity"
+    }
+]
