@@ -6,6 +6,26 @@
         "deploy": "https://dinghome.pages.dev"
     },
     {
+        "title": "FlexCNES",
+        "description": "Assistente de preenchimento de fichas e planilha CNES.",
+        "category": "contribuição",
+        "github": "https://github.com/antth-Luca/FlexCNES"
+    },
+    {
+        "title": "Red Reign",
+        "description": "Minecraft: Uma história e mecânicas de roubo de vida.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/ModRedReign",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/red-reign"
+    },
+    {
+        "title": "Blue Hearts: Vinebound",
+        "description": "Minecraft: Addon para Blue Hearts.",
+        "category": "mod",
+        "github": "https://github.com/antth-Luca/AddonBHVinebound",
+        "deploy": "https://www.curseforge.com/minecraft/mc-mods/bhvinebound"
+    },
+    {
         "title": "Blue Hearts",
         "description": "Minecraft: Novo tipo de saúde.",
         "category": "mod",
